@@ -9,11 +9,9 @@
 <style>
 body
 {
-background-image: url("http://bpic.588ku.com/back_pic/00/01/77/51/7658b8799f29fe3fc05783d9007a75c3.jpg");
-background-size: 100% 100%;
+background-color: #1a75ff;
     
 }
-
 h1
 {
 color: #E5E5E5;
@@ -26,20 +24,17 @@ color: #E5E5E5;
 }
 a{
 	font-size: 18px;
-	color:#0066ff;
+	color:#001433;
 }
-
 .form {
   background: rgba(16, 16, 16, 0.6);
   padding:70px 80px 50px 80px;
   max-width: 350px;
-  max-height: 100%;
+  max-height: 800px;
   margin:auto;
   position:relative;
   font-family: 'Basic';
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-
-
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.7);
 }
 input, textarea {
     width: 100%;
@@ -55,14 +50,13 @@ input, textarea {
 }
 input:focus, textarea:focus {
   outline: 0;
-  border-color: #000000;
+  border-color: #002966;
 }
 .labels{
 	font-size:15px;
 	color:#E5E5E5;
 	width:100%;
 	margin-bottom: 15px;
-
 }
 .button
 {
@@ -70,11 +64,12 @@ margin-top: 25px;
 -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.7s;
     cursor: pointer;
-    background-color: #666666;
+    background-color: #3385ff;
+    background-color: #0066ff;
 }
 .button:hover
 {
-	background-color: #000000;
+	background-color: #001433;
     color: white;
 }
 .hr{
@@ -104,7 +99,7 @@ padding: 50px;
 			<label class="c1">PASSWORD</label>
 			<input type="password" name="pwd" id="password" required>
 		</div>
-		<input type="submit" class="button" value="Log In" id="submit" onclick="validate()">
+		<input type="button" class="button" value="Log In" id="submit" onclick="validate()">
 		<div class="hr"></div>
 				<div class="foot-lnk">
 					<a href="#forgot">Forgot Password?</a>
