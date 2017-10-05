@@ -6,7 +6,7 @@ function validate()
 	{
 	alert ("Login successful");
 	window.location.href = "https://sweezy793.github.io/name"; 
-	return false;
+	
 	}
 	else if(username.value.length==0 && password.value.length==0)
 	{
