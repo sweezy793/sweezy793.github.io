@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Basic' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+body
+{
+background-image: url("http://bpic.588ku.com/back_pic/00/01/77/51/7658b8799f29fe3fc05783d9007a75c3.jpg");
+background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+h1
+{
+color: #E5E5E5;
+  text-align: center;
+  
+  font-weight: 200;
+  margin: 0 0 40px;
+  font-family:'Baumans';
+  font-size:60px
+}
+a{
+	font-size: 18px;
+	color:#0066ff;
+}
+
+.form {
+  background: rgba(16, 16, 16, 0.6);
+  padding:70px 80px 50px 80px;
+  max-width: 350px;
+  max-height: 800px;
+  margin:auto;
+  position:relative;
+  font-family: 'Basic';
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+
+
+}
+input, textarea {
+    width: 100%;
+    height: 40px;
+    padding: 12px 30px;
+    box-sizing: border-box;
+    background:rgba(178,178,178,0.3);
+    border-radius: 24px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    resize: none;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #000000;
+}
+.labels{
+	font-size:15px;
+	color:#E5E5E5;
+	width:100%;
+	margin-bottom: 15px;
+
+}
+.button
+{
+margin-top: 25px;
+-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.7s;
+    cursor: pointer;
+    background-color: #666666;
+}
+.button:hover
+{
+	background-color: #000000;
+    color: white;
+}
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+.photo
+{
+margin-left: 60px;
+}
+</style>
+<script src="login.js"></script>
+<body>
+	<div class="form">
+	<form name="myForm" id="form-id">
+	<div class="photo"><img src="http://palletshifter.com/images/icons/profile.png" width="75%"alt=""/></div>
+		<h1>SIGN IN</h1>
+		<div class="labels">
+			<label class="c1" >USERNAME</label>
+			<input type="text" name="user" id="username" required>
+		</div>
+		<div class="labels">
+			<label class="c1">PASSWORD</label>
+			<input type="password" name="pwd" id="password" required>
+		</div>
+		<input type="submit" class="button" value="Log In" id="submit" onclick="validate()">
+		<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+	</div>
+</body>
+
+</head>
+</html>
